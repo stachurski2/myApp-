@@ -12,8 +12,6 @@ import PureLayout
 
 class InfoViewController: RootViewControler  {
    
-    
- 
     var scrollView:UIScrollView = UIScrollView()
     var contentView:UIView = UIView()
     
@@ -44,7 +42,7 @@ class InfoViewController: RootViewControler  {
     func setUpView(){
         setUpBar()
         setUpTitle(with: "InfoView View")
-        setUpLeftButton(button: backButton, action: #selector(InfoViewController.back))
+        setUpBackButton()
         setUpScrollView()
         setUpText()
     }
@@ -52,7 +50,7 @@ class InfoViewController: RootViewControler  {
     func setUpContraints(){
         setUpBarConstraints()
         setUpTitleContraints()
-        setUpLeftButtonConstraint()
+        setUpBackButtonConstraints()
         setUpScrollViewCostraints()
         setUpTextConstraints()
     }
@@ -86,23 +84,8 @@ class InfoViewController: RootViewControler  {
             descriptionLabel.textAlignment = NSTextAlignment.justified
             descriptionLabel.autoPinEdge(.left, to: .left, of: contentView, withOffset: 20)
             descriptionLabel.autoPinEdge(.right, to: .right, of: contentView, withOffset: 20)
-        
-    }
-        
-
-    
-    
-    @objc func back(){
-        dismiss(animated: true, completion: nil)
     }
     
-
-    
-    
-  
-    
-    
-
 
 }
 

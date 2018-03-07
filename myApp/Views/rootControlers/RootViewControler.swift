@@ -16,9 +16,11 @@ class RootViewControler:UIViewController {
     
     let kBarHeight: CGFloat = 50.0
     
+    let barColor: UIColor = .red
+    
     lazy var viewBar: UIView = {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = barColor
         return view
     }()
     
@@ -85,13 +87,27 @@ class RootViewControler:UIViewController {
     }
     
     func setUpRightButtonConstraints(){
-        rightButton.autoPinEdge(.top, to: .top, of: viewBar, withOffset: 8)
+        rightButton.autoPinEdge(.top, to: .top, of: viewBar, withOffset: 15)
         rightButton.autoPinEdge(.trailing, to: .trailing, of: viewBar, withOffset: -10)
     }
     
     func setUpLeftButtonConstraint(){
-        leftButton.autoPinEdge(.top, to: .top, of: viewBar, withOffset: 8)
+        leftButton.autoPinEdge(.top, to: .top, of: viewBar, withOffset: 15)
         leftButton.autoPinEdge(.leading, to: .leading, of: viewBar, withOffset: 10)
+    }
+    
+    func setUpBackButton(){
+        viewBar.addSubview(backButton)
+        backButton.addTarget(nil, action: #selector(back), for: .touchUpInside)
+    }
+    
+    func setUpBackButtonConstraints(){
+        backButton.autoPinEdge(.top, to: .top, of: viewBar, withOffset: 8)
+        backButton.autoPinEdge(.leading, to: .leading, of: viewBar, withOffset: 10)
+    }
+    
+    @objc func back(){
+        dismiss(animated: true, completion: nil)
     }
     
     

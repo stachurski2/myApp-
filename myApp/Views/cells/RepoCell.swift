@@ -27,9 +27,7 @@ class RepoCell:UITableViewCell {
 
         self.name?.text = name
         self.desc?.text = description
-        
-        
-        
+    
         self.contentView.addSubview(nam)
         self.contentView.addSubview(desc)
         
@@ -37,8 +35,7 @@ class RepoCell:UITableViewCell {
         nam.topAnchor.constraint(equalTo: marginGuide.topAnchor).isActive = true
         nam.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
         nam.numberOfLines = 0
-        
-        
+    
         desc.leadingAnchor.constraint(equalTo: marginGuide.leadingAnchor).isActive = true
         desc.bottomAnchor.constraint(equalTo: marginGuide.bottomAnchor).isActive = true
         desc.trailingAnchor.constraint(equalTo: marginGuide.trailingAnchor).isActive = true
@@ -47,9 +44,5 @@ class RepoCell:UITableViewCell {
         desc.font = UIFont(name: "Avenir-Book", size: 12)
         desc.textColor = UIColor.lightGray
         
-    
-        
     }
-    
-    
 }
