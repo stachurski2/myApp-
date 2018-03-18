@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17453A20205F1345006FAF68 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 17453A1F205F1345006FAF68 /* Localizable.strings */; };
 		17B115C120360D4400E788E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B115C020360D4400E788E9 /* AppDelegate.swift */; };
 		17B115C320360D4400E788E9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B115C220360D4400E788E9 /* TableViewController.swift */; };
 		17B115C820360D4400E788E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17B115C720360D4400E788E9 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17453A1F205F1345006FAF68 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		17B115BD20360D4400E788E9 /* myApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B115C020360D4400E788E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17B115C220360D4400E788E9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		17B115B420360D4400E788E9 = {
 			isa = PBXGroup;
 			children = (
+				17453A1F205F1345006FAF68 /* Localizable.strings */,
 				17E8EA232048A32700C10DE4 /* podfile */,
 				17B115BF20360D4400E788E9 /* myApp */,
 				17B115D420360D4400E788E9 /* myAppTests */,
@@ -211,6 +214,7 @@
 				17B115BB20360D4400E788E9 /* Resources */,
 				32D318B6734F52BF5F4EE5D4 /* [CP] Embed Pods Frameworks */,
 				DEA468379BB2C3DB27BE53BB /* [CP] Copy Pods Resources */,
+				17453A1E205F0EB0006FAF68 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -309,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17E8EA242048A32700C10DE4 /* podfile in Resources */,
+				17453A20205F1345006FAF68 /* Localizable.strings in Resources */,
 				17B115CB20360D4400E788E9 /* LaunchScreen.storyboard in Resources */,
 				17B115C820360D4400E788E9 /* Assets.xcassets in Resources */,
 			);
@@ -331,6 +336,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		17453A1E205F0EB0006FAF68 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd myApp; ${PODS_ROOT}/SwiftLint/swiftlint";
+		};
 		32D318B6734F52BF5F4EE5D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

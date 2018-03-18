@@ -4,5 +4,6 @@ use_frameworks!
 
 target 'myApp' do
 pod 'PureLayout'
+pod 'SwiftLint'
 end
 
