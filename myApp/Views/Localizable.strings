@@ -1,0 +1,18 @@
+
+"title_app" = "Welcome to Your Weather App!";
+"home_button_start" = "Proceed";
+"invalid_adress" = "Invalid adress";
+"fetch_problem" = "Connection problem or data encoding error";
+"enter_city" = "Enter city name here";
+"no_results" = "There is no result matching to your city names";
+"select_city" = "Select City";
+"back_button_title" = "back";
+"temperture" = "Temperature:";
+"max_temperature" = "Maximum temperature:";
+"min_temperature" = "Minimum temperature:";
+"pressure" = "Pressure:";
+"wind_speed" = "Wind speed:";
+"error_comunicate" = "Something went wrong";
+"Error_url_encode" = "Error during url encode process";
+"Error_response_encode" = "Error during response encode process";
+"Coordinate_fetch_error" = "Error during cordinate fetch process";
