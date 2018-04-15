@@ -15,7 +15,7 @@ class WeatherFetch {
 
     private var dataTask: DataRequest?
 
-    public weak var delegate: WeatherViewControllerDelagate?
+    weak var delegate: WeatherViewControllerDelagate?
 
     public func getWeather(coordinates: (Float, Float)) {
         if state == .executing {
