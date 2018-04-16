@@ -10,6 +10,7 @@ class HomeViewController: UIViewController {
 
     override func loadView() {
         let contentView = HomeView(frame: .zero)
+
         view = contentView
         defineMethods()
     }

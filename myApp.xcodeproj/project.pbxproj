@@ -31,6 +31,8 @@
 		17969F48208005690037DF06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17969F47208005690037DF06 /* AppDelegate.swift */; };
 		17B115D620360D4400E788E9 /* myAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B115D520360D4400E788E9 /* myAppTests.swift */; };
 		17B115E120360D4400E788E9 /* myAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B115E020360D4400E788E9 /* myAppUITests.swift */; };
+		17B8131F2083F75000B102E2 /* MockSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8131D2083F75000B102E2 /* MockSearchViewController.swift */; };
+		17B813202083F75000B102E2 /* MockWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8131E2083F75000B102E2 /* MockWeatherViewController.swift */; };
 		17E8EA242048A32700C10DE4 /* podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17E8EA232048A32700C10DE4 /* podfile */; };
 		D79301A1BB600F2C3D6D9BFC /* Pods_myApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E26836E7E5CFF752C80960F /* Pods_myApp.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +84,8 @@
 		17B115DC20360D4400E788E9 /* myAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = myAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17B115E020360D4400E788E9 /* myAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myAppUITests.swift; sourceTree = "<group>"; };
 		17B115E220360D4400E788E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17B8131D2083F75000B102E2 /* MockSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockSearchViewController.swift; sourceTree = "<group>"; };
+		17B8131E2083F75000B102E2 /* MockWeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockWeatherViewController.swift; sourceTree = "<group>"; };
 		17E8EA232048A32700C10DE4 /* podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5E26836E7E5CFF752C80960F /* Pods_myApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		816476F0C265B4D61556E7F6 /* Pods-myApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-myApp/Pods-myApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -274,6 +278,8 @@
 		17B115D420360D4400E788E9 /* myAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				17B8131D2083F75000B102E2 /* MockSearchViewController.swift */,
+				17B8131E2083F75000B102E2 /* MockWeatherViewController.swift */,
 				17B115D520360D4400E788E9 /* myAppTests.swift */,
 				17B115D720360D4400E788E9 /* Info.plist */,
 			);
@@ -444,7 +450,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd myApp; ${PODS_ROOT}/SwiftLint/swiftlint";
+			shellScript = "cd myApp; swiftlint";
+			showEnvVarsInLog = 0;
 		};
 		32D318B6734F52BF5F4EE5D4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -532,6 +539,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17B813202083F75000B102E2 /* MockWeatherViewController.swift in Sources */,
+				17B8131F2083F75000B102E2 /* MockSearchViewController.swift in Sources */,
 				17B115D620360D4400E788E9 /* myAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
